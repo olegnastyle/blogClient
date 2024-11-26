@@ -28,6 +28,7 @@ onMounted(() => {
 
 const toggleTheme = () => {
     isDark.value = !isDark.value;
+    console.log(isDark.value);
     if (isDark.value) {
         document.documentElement.classList.add('dark');
         localStorage.setItem('color-theme', 'dark');
