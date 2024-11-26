@@ -12,9 +12,12 @@
 </template>
 
 <script setup>
-const toggleTheme = () => {
+// const toggleTheme = () => {
+//     console.log('fefefwe');
+// }
+
+function toggleTheme() {
     console.log('fefefwe');
-    
 }
 
 // const isDarkMode = ref('')
