@@ -6,7 +6,9 @@
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">NuxtVerse</span>
             </a>
             <div class="flex gap-8 md:order-2">
-                <DarkMode />
+                <!-- <DarkMode /> -->
+
+                <button @click="toggleTheme" type="button">Лимпопо</button>
                 <!-- Поиск -->
                 <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
@@ -76,4 +78,8 @@
 <script setup>
 const route = useRoute()
 const isActive = (path) => route.path.split('/')[1] === path
+
+function toggleTheme() {
+    console.log('fefefwe');
+}
 </script>
