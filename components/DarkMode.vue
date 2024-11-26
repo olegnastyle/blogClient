@@ -12,8 +12,8 @@
 
 
 <script setup>
-const isDarkMode = ref('') // класс для HTML
-const isDark = ref(false) // по умолчанию светлая тема
+const isDarkMode = ref('')
+const isDark = ref(false)
 
 onMounted(() => {
     if (localStorage.getItem('color-theme') === 'dark') {
@@ -25,7 +25,6 @@ onMounted(() => {
     }
 });
 
-// // Функция для переключения темы
 const toggleTheme = () => {
     isDark.value = !isDark.value;
     if (isDark.value) {
