@@ -8,7 +8,7 @@
         </svg>
     </button> -->
 
-    <button @click="toggleTheme()" type="button">Лимпопо</button>
+    <button @click="toggleTheme" type="button">Лимпопо</button>
 </template>
 
 <script setup>
