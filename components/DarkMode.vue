@@ -9,40 +9,44 @@
     </button>
 </template>
 
-
 <script setup>
-const isDarkMode = ref('')
-const isDark = ref(false)
-
-onMounted(() => {
-    if (localStorage.getItem('color-theme') === 'dark') {
-        isDark.value = true;
-        isDarkMode.value = 'dark'
-        
-        
-    } else {
-        isDark.value = false;
-        isDarkMode.value = ''
-    }
-});
-
 const toggleTheme = () => {
-    isDark.value = !isDark.value;
-    console.log(isDark.value);
-    if (isDark.value) {
-        document.documentElement.classList.add('dark');
-        localStorage.setItem('color-theme', 'dark');
-        console.log(isDark.value);
-    } else {
-        document.documentElement.classList.remove('dark');
-        localStorage.setItem('color-theme', 'light');
-        console.log(isDark.value);
-    }
-};
+    console.log('fefefwe');
+    
+}
 
-useHead({
-    htmlAttrs: {
-        class: isDarkMode.value
-    }
-})
+// const isDarkMode = ref('')
+// const isDark = ref(false)
+
+// onMounted(() => {
+//     if (localStorage.getItem('color-theme') === 'dark') {
+//         isDark.value = true;
+//         isDarkMode.value = 'dark'
+        
+        
+//     } else {
+//         isDark.value = false;
+//         isDarkMode.value = ''
+//     }
+// });
+
+// const toggleTheme = () => {
+//     isDark.value = !isDark.value;
+//     console.log(isDark.value);
+//     if (isDark.value) {
+//         document.documentElement.classList.add('dark');
+//         localStorage.setItem('color-theme', 'dark');
+//         console.log(isDark.value);
+//     } else {
+//         document.documentElement.classList.remove('dark');
+//         localStorage.setItem('color-theme', 'light');
+//         console.log(isDark.value);
+//     }
+// };
+
+// useHead({
+//     htmlAttrs: {
+//         class: isDarkMode.value
+//     }
+// })
 </script>
