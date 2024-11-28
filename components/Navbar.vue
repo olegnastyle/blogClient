@@ -2,7 +2,7 @@
     <nav class="bg-white border-gray-200 dark:bg-gray-900">
         <div class="flex flex-wrap items-center justify-between mx-auto py-4">
             <a href="https://615f68b9663f.vps.myjino.ru/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="http://panel.615f68b9663f.vps.myjino.ru/uploads/balanced_diet_686b9878eb.ico" class="h-8" alt="Flowbite Logo" />
+                <img src="https://a1c537287dd6.vps.myjino.ru/uploads/balanced_diet_686b9878eb.ico" class="h-8" alt="Flowbite Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">NuxtVerse</span>
             </a>
             <div class="flex gap-8 md:order-2">
