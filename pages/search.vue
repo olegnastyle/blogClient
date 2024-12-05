@@ -11,6 +11,8 @@
 <script setup>
 const search = useSearchStore()
 const posts = ref([]) 
+console.log(posts);
+
 
 async function searchAlert() {
     console.log(search.searchQuery);
