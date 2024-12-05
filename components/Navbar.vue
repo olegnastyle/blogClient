@@ -73,10 +73,12 @@
 </template>
 
 <script setup>
-const router = useRoute()
-const isActive = (path) => router.path.split('/')[1] === path
+const route = useRoute()
+const isActive = (path) => route.path.split('/')[1] === path
 
+
+// const router = useRouter()
 function goToSearch() {
-    router.push('/search')
+    route.push('/search')
 }
 </script>
