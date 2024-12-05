@@ -77,8 +77,8 @@ const route = useRoute()
 const isActive = (path) => route.path.split('/')[1] === path
 
 
-// const router = useRouter()
+const router = useRouter()
 function goToSearch() {
-    route.push('/search')
+    router.push('/search')
 }
 </script>
