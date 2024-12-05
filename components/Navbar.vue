@@ -81,6 +81,6 @@ function toggleTheme() {
 }
 
 function goToSearch() {
-    route.hasRoute('search')
+    route.addRoute({path: '/search'})
 }
 </script>
