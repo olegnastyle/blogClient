@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-const router = useRoute()
+const router = useRouter()
 const isActive = (path) => router.path.split('/')[1] === path
 
 function goToSearch() {
