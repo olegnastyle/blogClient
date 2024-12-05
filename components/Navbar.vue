@@ -81,6 +81,6 @@ function toggleTheme() {
 }
 
 function goToSearch() {
-    router.push('/search')
+    route.push('/search')
 }
 </script>
