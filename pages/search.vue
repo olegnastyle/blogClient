@@ -22,7 +22,7 @@ async function searchAlert() {
         } catch (error) {
             console.error('Ошибка при выполнении запроса:', error);
         }
-        console.log(posts.value);
+        
         
     }
 }
@@ -31,6 +31,7 @@ async function searchAlert() {
 watch(() => search.searchQuery, (newQuery) => {
     if (newQuery) {
         searchAlert(); // Вызываем поиск, если есть новый запрос
+        console.log(posts.value);
     } else {
         posts.value = []; // Очищаем результаты, если запрос пустой
     }
