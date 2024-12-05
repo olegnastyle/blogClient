@@ -10,7 +10,7 @@
 
 <script setup>
 const search = useSearchStore()
-const posts = ref()
+const posts = ref() 
 
 async function searchAlert() {
     console.log(search.searchQuery);
