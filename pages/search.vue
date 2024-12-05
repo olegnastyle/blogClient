@@ -10,9 +10,7 @@
 
 <script setup>
 const search = useSearchStore()
-const posts = ref([]) 
-console.log(posts);
-
+const posts = ref([])
 
 async function searchAlert() {
     console.log(search.searchQuery);
@@ -25,5 +23,14 @@ async function searchAlert() {
     }
 }
 
-onMounted(() => searchAlert())
+// Слушаем изменения в search.searchQuery
+watch(() => search.searchQuery, (newQuery) => {
+    if (newQuery) {
+        searchAlert(); // Вызываем поиск, если есть новый запрос
+    } else {
+        posts.value = []; // Очищаем результаты, если запрос пустой
+    }
+});
+
+// onMounted(() => searchAlert())
 </script>
