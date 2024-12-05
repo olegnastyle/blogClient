@@ -2,7 +2,7 @@
     <h1>Поиск</h1>
 
     <main>
-        <article v-for="post in posts" :key="post.id">
+        <article v-for="post in posts.value" :key="post.id">
             <h3>{{ post.title }}</h3>
         </article>
     </main>
