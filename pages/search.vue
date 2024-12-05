@@ -18,7 +18,7 @@ async function searchAlert() {
     if(!search.searchQuery ==! true) {
         try {
             const response = await $fetch(`https://a1c537287dd6.vps.myjino.ru/api/posts?filters[$or][0][title][$containsi]=${search.searchQuery}&filters[$or][1][body][$containsi]=${search.searchQuery}`);
-            posts = response.data;
+            posts.value = response.data;
         } catch (error) {
             console.error('Ошибка при выполнении запроса:', error);
         }
