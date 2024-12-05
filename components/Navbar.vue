@@ -73,14 +73,14 @@
 </template>
 
 <script setup>
-const route = useRoute()
-const isActive = (path) => route.path.split('/')[1] === path
+const router = useRoute()
+const isActive = (path) => router.path.split('/')[1] === path
 
 function toggleTheme() {
     console.log('fefefwe');
 }
 
 function goToSearch() {
-    route.push({path: '/search'})
+    router.push({path: '/search'})
 }
 </script>
