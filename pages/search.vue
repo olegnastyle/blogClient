@@ -1,5 +1,8 @@
 <template>
     <h1>Поиск</h1>
+    <main>
+        
+    </main>
 </template>
 
 <script setup>

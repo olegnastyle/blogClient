@@ -81,6 +81,6 @@ function toggleTheme() {
 }
 
 function goToSearch() {
-    route.push('/search')
+    route.push('search')
 }
 </script>
