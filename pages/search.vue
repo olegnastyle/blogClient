@@ -1,6 +1,5 @@
 <template>
     <h1>Поиск</h1>
-
     <main>
         <article v-for="post in posts.value" :key="post.id">
             <h3>{{ post.title }}</h3>
@@ -12,6 +11,7 @@
 const search = useSearchStore()
 const posts = ref([])
 
+
 async function searchAlert() {
     console.log(search.searchQuery);
 
@@ -22,6 +22,8 @@ async function searchAlert() {
         } catch (error) {
             console.error('Ошибка при выполнении запроса:', error);
         }
+        console.log(posts.value);
+        
     }
 }
 
