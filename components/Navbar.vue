@@ -7,6 +7,6 @@ const router = useRouter()
 const isActive = (path) => router.path.split('/')[1] === path
 
 function goToSearch() {
-    router.replace('/search')
+    router.push('/search')
 }
 </script>
