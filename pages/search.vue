@@ -1,7 +1,7 @@
 <template>
     <h1>Поиск</h1>
     <main>
-        <article v-for="post in posts.value" :key="post.id">
+        <article v-for="post in posts" :key="post.id">
             <h3>{{ post }}</h3>
         </article>
         <p v-if="posts.length === 0">Нет доступных статей.</p>
