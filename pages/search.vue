@@ -2,7 +2,7 @@
     <h1>Поиск</h1>
 
     <main>
-        <button @click="searcAlert">Показать Search</button>
+        <button @click="searchAlert">Показать Search</button>
     </main>
 </template>
 
