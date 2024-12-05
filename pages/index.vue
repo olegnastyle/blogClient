@@ -60,5 +60,5 @@
 
 
 <script setup>
-onMounted(() => initFlowbite())
+// onMounted(() => initFlowbite())
 </script>
