@@ -83,19 +83,9 @@ const isActive = (path) => route.path.split('/')[1] === path
 const router = useRouter()
 const inputSearch = ref(search.searchQuery)
 
-// watch(inputSearch, async () => {
-//     router.push('/search')
-// })
-
 watch(() => search.searchQuery, (newQuery) => {
-    if (newQuery) {
-        router.push('/search')
-    } else {
-        //posts.value = []; // Очищаем результаты, если запрос пустой
-    }
+    if (newQuery) router.push('/search')
 });
 
-function goToSearch() {
-    router.push('/search')
-}
+const goToSearch = () => router.push('/search') 
 </script>
