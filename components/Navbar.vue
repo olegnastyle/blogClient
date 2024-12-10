@@ -79,7 +79,14 @@ const route = useRoute()
 const isActive = (path) => route.path.split('/')[1] === path
 
 
+// поиск на сайте
 const router = useRouter()
+const inputSearch = ref(search.searchQuery)
+
+watch(inputSearch, async () => {
+    router.push('/search')
+})
+
 function goToSearch() {
     router.push('/search')
 }
