@@ -42,8 +42,6 @@ async function searchAlert() {
         } catch (error) {
             console.error('Ошибка при выполнении запроса:', error);
         }
-        
-        
     }
 }
 
